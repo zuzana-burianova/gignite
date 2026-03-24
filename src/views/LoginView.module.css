@@ -1,0 +1,43 @@
+.container {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+}
+
+.content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: clamp(3rem, 15vw, 6rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.25em;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0 0 3rem;
+}
+
+.loginBtn {
+  background: #1db954;
+  color: #000;
+  border: none;
+  border-radius: 9999px;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: opacity 0.15s;
+}
+
+.loginBtn:active {
+  opacity: 0.8;
+}

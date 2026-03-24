@@ -1,0 +1,172 @@
+.container {
+  min-height: 100dvh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.hiddenInput {
+  position: fixed;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.position {
+  font-size: 0.85rem;
+  color: #555;
+  font-variant-numeric: tabular-nums;
+  min-width: 4rem;
+  text-align: center;
+}
+
+.navBtn {
+  background: none;
+  border: none;
+  color: #444;
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  touch-action: manipulation;
+  line-height: 1;
+}
+
+.navBtn:disabled {
+  opacity: 0.2;
+}
+
+.navBtn:not(:disabled):active {
+  color: #fff;
+}
+
+.setupBtn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  touch-action: manipulation;
+  margin-left: auto;
+}
+
+.setupBtn:active {
+  color: #888;
+}
+
+/* ── Main ── */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1.5rem 1rem;
+  gap: 2.5rem;
+}
+
+.currentSong {
+  text-align: center;
+}
+
+.songName {
+  font-size: clamp(2.5rem, 11vw, 5.5rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  word-break: break-word;
+}
+
+.artistName {
+  font-size: clamp(1rem, 4.5vw, 2rem);
+  color: #555;
+  margin-top: 0.4em;
+  font-weight: 400;
+}
+
+/* ── Next song ── */
+.nextSong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.nextLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #333;
+  font-weight: 600;
+}
+
+.nextName {
+  font-size: clamp(1rem, 5vw, 2rem);
+  color: #444;
+  font-weight: 500;
+}
+
+/* ── Progress dots ── */
+.footer {
+  padding: 0.75rem 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  max-width: 90vw;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2a2a2a;
+  flex-shrink: 0;
+}
+
+.dotActive {
+  background: #fff;
+}
+
+/* ── Empty state ── */
+.empty {
+  min-height: 100dvh;
+  background: #0a0a0a;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.backBtn {
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  touch-action: manipulation;
+}
